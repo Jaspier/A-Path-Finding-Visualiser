@@ -21,7 +21,7 @@ class Node:
         return self.color == style.GREEN
 
     def is_closed(self):
-        return self.color == style.RED
+        return self.color == style.DARKGREY
 
     def is_wall(self):
         return self.color == style.BLACK
@@ -30,7 +30,7 @@ class Node:
         return self.color == style.ORANGE
 
     def is_goal(self):
-        return self.color == style.TURQUOISE
+        return self.color == style.PURPLE
 
     def reset(self):
         self.color = style.WHITE
@@ -42,7 +42,7 @@ class Node:
         self.color = style.GREEN
 
     def make_closed(self):
-        self.color = style.RED
+        self.color = style.DARKGREY
 
     def make_wall(self):
         self.color = style.BLACK
